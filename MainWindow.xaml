@@ -1,0 +1,31 @@
+﻿<Window x:Class="SBT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SBT"
+        mc:Ignorable="d"
+        Title="Security Benchmark Tool" Height="450" Width="800">
+
+
+    <Grid Margin="10">
+        <DockPanel Margin="0,0,0,108">
+            <Menu DockPanel.Dock="Top" Height="304">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Open" Click="MnuOpen_Click" />
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
+        <TextBox Margin = "10,30,10,108" 
+                 TextWrapping = "Wrap" 
+                 Name="tbMultiLine"   
+                 VerticalScrollBarVisibility="Visible">
+        </TextBox >
+
+        <StackPanel Margin="10,311,10,16">
+            <Button x:Name="btnExport" HorizontalAlignment="Right" Click="BtnExport_Click" Height="21" Width="207" Margin="20">Export to JSON</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
